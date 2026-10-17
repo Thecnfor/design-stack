@@ -11,7 +11,7 @@ A visual language for interfaces that feel like a data layer over reality: restr
 
 ctOS is not neon cyberpunk. It is:
 
-- **Near-black + one signal color.** Cyan-green means "interactive / current / locked". Amber means "attention". Red means "danger". Nothing else is colored.
+- **Near-black + warm white + one restrained pink.** Pink marks focus, punctuation, status dots, radar sweeps, and very few storm glyphs. Nothing else is colored.
 - **Character grid as structure.** ASCII is a material, not a skin. Align it to the same 8px grid as body copy.
 - **Quiet at rest, loud on interaction.** Ambient scanlines and occasional glitches are low intensity. Hover, focus, and route changes trigger the burst.
 - **Precision over decoration.** Thin borders, small radii, monospace metadata, minimal shadows.
@@ -30,19 +30,18 @@ Use CSS variables, not hard-coded hex values in components.
 
 ```css
 :root {
-  --ctos-bg: #050708;
-  --ctos-surface: #0a0f10;
-  --ctos-elevated: #101719;
-  --ctos-border: #1c2a2d;
-  --ctos-border-hi: #2c4448;
-  --ctos-fg: #e8f0f2;
-  --ctos-fg-muted: #8fa3a8;
-  --ctos-fg-dim: #566a6f;
-  --ctos-cyan: #5ff2d0;
-  --ctos-blue: #5aa9ff;
-  --ctos-amber: #ffb020;
-  --ctos-red: #ff4d5e;
-  --ctos-grid: rgba(95, 242, 208, 0.07);
+  --ctos-bg: #08070a;
+  --ctos-surface: #0e0c10;
+  --ctos-elevated: #141117;
+  --ctos-border: #282229;
+  --ctos-border-hi: #453a44;
+  --ctos-fg: #f5f2f4;
+  --ctos-fg-muted: #9a8e95;
+  --ctos-fg-dim: #6b5f67;
+  --ctos-pink: #efa9c2;
+  --ctos-pink-soft: #c77e99;
+  --ctos-red: #ff6b8a;
+  --ctos-grid: rgba(242, 167, 195, 0.05);
 }
 ```
 
@@ -50,10 +49,12 @@ Semantics:
 
 | Token | Meaning | Allowed uses |
 |---|---|---|
-| cyan | signal / current / success | focus ring, active nav, key numbers, storm highlight |
-| blue | information / external | links, source markers |
-| amber | attention / in progress | drafts, unsaved, experiments |
-| red | danger / destructive | errors, delete, alert |
+| pink | accent / focus / current | focus ring, active nav, punctuation, status dot, radar sweep, rare storm glyph |
+| pink-soft | secondary accent | experiment status, secondary markers |
+| red-pink | danger | errors, delete, alert |
+| warm white | content | headings, body, primary button fill |
+
+Pink is an accent, not a fill. Never use it for paragraphs, button backgrounds, or large surfaces.
 
 ## Typography
 
@@ -115,6 +116,7 @@ Reference implementations: `references/ascii-wordmark.tsx`, `references/system-l
 
 ## Review checklist
 
+- [ ] Pink is used only as an accent (focus, punctuation, small status marks); no large pink fills.
 - [ ] Only semantic colors are used; no purple neon or multicolor glow.
 - [ ] Text remains readable with the storm at full intensity.
 - [ ] Focus states are visible on every link, button, and card.

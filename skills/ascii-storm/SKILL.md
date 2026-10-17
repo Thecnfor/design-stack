@@ -40,11 +40,11 @@ A client provider updates `document.documentElement.dataset.storm` on pathname c
 
 | Tier | Cell | Alpha | FPS | Trail | Streams | Pulse |
 |---|---|---|---|---|---|---|
-| full | 15px | 0.60 | 30 | 14 | 2 | yes |
-| medium | 32px | 0.32 | 20 | 9 | 1 | no |
-| low | 64px | 0.16 | 12 | 5 | 1 | no |
-| hud | 42px | 0.18 | 12 | 6 | 2 | light |
-| off | 64px | 0.08 | 1 | 3 | 1 | no |
+| full | 22px | 0.22 | 24 | 9 | 1 | yes |
+| medium | 40px | 0.12 | 18 | 6 | 1 | no |
+| low | 72px | 0.06 | 10 | 4 | 1 | no |
+| hud | 48px | 0.08 | 10 | 5 | 1 | light |
+| off | 72px | 0.04 | 1 | 3 | 1 | no |
 
 Mobile: multiply cell by 1.6, force one stream, cap FPS at 18.
 
@@ -59,7 +59,7 @@ Mobile: multiply cell by 1.6, force one stream, cap FPS at 18.
 7. **Reduced motion:** draw one static frame and return; no rAF.
 8. **Accessibility:** `aria-hidden="true"`; canvas is fixed, `pointer-events-none`, behind content (`z-0`), content at `z-10`.
 9. **Readability:** body text must sit on a surface or vignette; never let dense glyphs run through paragraphs.
-10. **Color semantics:** cyan body, white/amber/red heads at ~5–8% probability. No multicolor rainbow.
+10. **Color semantics:** warm white/gray body, rare pink heads at ~4–6% probability. No multicolor rainbow, no bright green.
 
 ## Skeleton
 

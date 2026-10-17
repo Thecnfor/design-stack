@@ -1,39 +1,38 @@
 :root {
   color-scheme: dark;
 
-  --background: #050708;
-  --foreground: #e8f0f2;
-  --card: #0a0f10;
-  --card-foreground: #e8f0f2;
-  --popover: #101719;
-  --popover-foreground: #e8f0f2;
-  --primary: #5ff2d0;
-  --primary-foreground: #041210;
-  --secondary: #101719;
-  --secondary-foreground: #e8f0f2;
-  --muted: #0f1618;
-  --muted-foreground: #8fa3a8;
-  --accent: #122123;
-  --accent-foreground: #e8f0f2;
-  --destructive: #ff4d5e;
-  --border: #1c2a2d;
-  --input: #1c2a2d;
-  --ring: #5ff2d0;
+  --background: #08070a;
+  --foreground: #f5f2f4;
+  --card: #0e0c10;
+  --card-foreground: #f5f2f4;
+  --popover: #141117;
+  --popover-foreground: #f5f2f4;
+  --primary: #f5f2f4;
+  --primary-foreground: #08070a;
+  --secondary: #141117;
+  --secondary-foreground: #f5f2f4;
+  --muted: #110e13;
+  --muted-foreground: #9a8e95;
+  --accent: #1a141a;
+  --accent-foreground: #f5f2f4;
+  --destructive: #ff6b8a;
+  --border: #282229;
+  --input: #282229;
+  --ring: #efa9c2;
   --radius: 0.5rem;
 
-  --ctos-bg: #050708;
-  --ctos-surface: #0a0f10;
-  --ctos-elevated: #101719;
-  --ctos-border: #1c2a2d;
-  --ctos-border-hi: #2c4448;
-  --ctos-fg: #e8f0f2;
-  --ctos-fg-muted: #8fa3a8;
-  --ctos-fg-dim: #566a6f;
-  --ctos-cyan: #5ff2d0;
-  --ctos-blue: #5aa9ff;
-  --ctos-amber: #ffb020;
-  --ctos-red: #ff4d5e;
-  --ctos-grid: rgba(95, 242, 208, 0.07);
+  --ctos-bg: #08070a;
+  --ctos-surface: #0e0c10;
+  --ctos-elevated: #141117;
+  --ctos-border: #282229;
+  --ctos-border-hi: #453a44;
+  --ctos-fg: #f5f2f4;
+  --ctos-fg-muted: #9a8e95;
+  --ctos-fg-dim: #6b5f67;
+  --ctos-pink: #efa9c2;
+  --ctos-pink-soft: #c77e99;
+  --ctos-red: #ff6b8a;
+  --ctos-grid: rgba(242, 167, 195, 0.05);
 }
 
 /* Tailwind v4 mapping */
@@ -57,8 +56,7 @@
   --color-ctos-fg: var(--ctos-fg);
   --color-ctos-fg-muted: var(--ctos-fg-muted);
   --color-ctos-fg-dim: var(--ctos-fg-dim);
-  --color-ctos-cyan: var(--ctos-cyan);
-  --color-ctos-blue: var(--ctos-blue);
-  --color-ctos-amber: var(--ctos-amber);
+  --color-ctos-pink: var(--ctos-pink);
+  --color-ctos-pink-soft: var(--ctos-pink-soft);
   --color-ctos-red: var(--ctos-red);
 }

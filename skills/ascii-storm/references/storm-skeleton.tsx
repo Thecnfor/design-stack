@@ -3,11 +3,11 @@
 import { useEffect, useRef } from "react";
 
 const CONFIG = {
-  full: { cell: 15, alpha: 0.6, fps: 30, trail: 14, speed: [0.5, 1.6], pulse: true, streams: 2 },
-  medium: { cell: 32, alpha: 0.32, fps: 20, trail: 9, speed: [0.3, 1.0], pulse: false, streams: 1 },
-  low: { cell: 64, alpha: 0.16, fps: 12, trail: 5, speed: [0.2, 0.6], pulse: false, streams: 1 },
-  hud: { cell: 42, alpha: 0.18, fps: 12, trail: 6, speed: [0.2, 0.8], pulse: true, streams: 2 },
-  off: { cell: 64, alpha: 0.08, fps: 1, trail: 3, speed: [0, 0], pulse: false, streams: 1 },
+  full: { cell: 22, alpha: 0.22, fps: 24, trail: 9, speed: [0.4, 1.2], pulse: true, streams: 1 },
+  medium: { cell: 40, alpha: 0.12, fps: 18, trail: 6, speed: [0.3, 0.9], pulse: false, streams: 1 },
+  low: { cell: 72, alpha: 0.06, fps: 10, trail: 4, speed: [0.2, 0.6], pulse: false, streams: 1 },
+  hud: { cell: 48, alpha: 0.08, fps: 10, trail: 5, speed: [0.2, 0.7], pulse: true, streams: 1 },
+  off: { cell: 72, alpha: 0.04, fps: 1, trail: 3, speed: [0, 0], pulse: false, streams: 1 },
 } as const;
 
 const GLYPHS = "01ｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾄﾅﾆﾇﾈﾉ<>[]{}#%&*+-=/\\|";
@@ -79,8 +79,8 @@ export function AsciiStorm() {
             if (fade <= 0.01) continue;
             const roll = Math.random();
             ctx.fillStyle = i === 0
-              ? roll > 0.94 ? `rgba(255,176,32,${fade})` : roll > 0.91 ? `rgba(255,77,94,${fade})` : `rgba(232,240,242,${Math.min(1, fade * 1.5)})`
-              : roll > 0.97 ? `rgba(255,176,32,${fade * 0.7})` : `rgba(95,242,208,${fade})`;
+              ? roll > 0.96 ? `rgba(239,169,194,${fade * 1.4})` : roll > 0.93 ? `rgba(199,126,153,${fade})` : `rgba(245,242,244,${Math.min(1, fade * 1.8)})`
+              : roll > 0.97 ? `rgba(239,169,194,${fade * 0.7})` : `rgba(245,242,244,${fade * 0.75})`;
             ctx.fillText(GLYPHS[(Math.random() * GLYPHS.length) | 0], c.x, y);
           }
         }

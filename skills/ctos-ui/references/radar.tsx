@@ -9,9 +9,9 @@ export function Radar({ className }: { className?: string }) {
       <div className="absolute left-1/2 top-0 h-full w-px bg-ctos-border/50" />
       <div className="absolute left-0 top-1/2 h-px w-full bg-ctos-border/50" />
       <div className="radar-sweep absolute inset-0 rounded-full" />
-      <span className="absolute left-[62%] top-[26%] size-1.5 rounded-full bg-ctos-cyan shadow-[0_0_10px_var(--ctos-cyan)]" />
-      <span className="absolute left-[30%] top-[58%] size-1 rounded-full bg-ctos-cyan/80 shadow-[0_0_8px_var(--ctos-cyan)]" />
-      <span className="absolute left-[70%] top-[70%] size-1 rounded-full bg-ctos-amber/80 shadow-[0_0_8px_var(--ctos-amber)]" />
+      <span className="absolute left-[62%] top-[26%] size-1.5 rounded-full bg-ctos-pink shadow-[0_0_10px_var(--ctos-pink)]" />
+      <span className="absolute left-[30%] top-[58%] size-1 rounded-full bg-ctos-pink/80 shadow-[0_0_8px_var(--ctos-pink)]" />
+      <span className="absolute left-[70%] top-[70%] size-1 rounded-full bg-ctos-pink-soft/80 shadow-[0_0_8px_var(--ctos-pink-soft)]" />
       <span className="absolute -top-4 left-1/2 -translate-x-1/2 font-mono text-[8px] uppercase tracking-[0.2em] text-ctos-fg-dim">
         scan
       </span>

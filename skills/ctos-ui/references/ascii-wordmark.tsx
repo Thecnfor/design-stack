@@ -4,12 +4,9 @@ import { useEffect, useRef } from "react";
 import { cn } from "cn";
 
 const ART = [
-  "██████╗   █████╗  ██╗  ██╗",
-  "██╔══██╗ ██╔══██╗ ██║ ██╔╝",
-  "██████╔╝ ███████║ █████╔╝ ",
-  "██╔══██╗ ██╔══██║ ██╔═██╗ ",
-  "██║  ██║ ██║  ██║ ██║  ██╗",
-  "╚═╝  ╚═╝ ╚═╝  ╚═╝ ╚═╝  ╚═╝",
+  "█▀█ █▀█ █▄▀",
+  "█▀▄ █▀█ █▀▄",
+  "▀ ▀ ▀ ▀ ▀ ▀",
 ];
 
 const GLYPHS = "01ｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾄﾅﾆﾇﾈﾉ<>[]{}#%&*+-=/\\|";
@@ -111,7 +108,7 @@ export function AsciiWordmark({ className }: { className?: string }) {
       role="img"
       aria-label="RAK"
       className={cn(
-        "select-none whitespace-pre font-mono leading-[1.02] tracking-[0.01em] text-ctos-fg",
+        "select-none whitespace-pre font-mono leading-[1.04] tracking-[0.08em] text-ctos-fg",
         className,
       )}
     >

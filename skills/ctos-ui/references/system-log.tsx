@@ -41,15 +41,15 @@ export function SystemLog({ className }: { className?: string }) {
     >
       <div className="mb-1 flex items-center justify-between text-[9px] uppercase tracking-[0.22em] text-ctos-fg-dim/80">
         <span>system.log</span>
-        <span className="text-ctos-cyan/70">live</span>
+        <span className="text-ctos-pink/70">live</span>
       </div>
       {BOOT.map((line) => (
         <p key={line}>
-          <span className="text-ctos-cyan/60">&gt;</span> {line}
+          <span className="text-ctos-pink/60">&gt;</span> {line}
         </p>
       ))}
       <p className="caret text-ctos-fg-muted">
-        <span className="text-ctos-cyan/60">&gt;</span> {status}
+        <span className="text-ctos-pink/60">&gt;</span> {status}
       </p>
     </div>
   );
