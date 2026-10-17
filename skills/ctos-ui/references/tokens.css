@@ -1,0 +1,64 @@
+:root {
+  color-scheme: dark;
+
+  --background: #050708;
+  --foreground: #e8f0f2;
+  --card: #0a0f10;
+  --card-foreground: #e8f0f2;
+  --popover: #101719;
+  --popover-foreground: #e8f0f2;
+  --primary: #5ff2d0;
+  --primary-foreground: #041210;
+  --secondary: #101719;
+  --secondary-foreground: #e8f0f2;
+  --muted: #0f1618;
+  --muted-foreground: #8fa3a8;
+  --accent: #122123;
+  --accent-foreground: #e8f0f2;
+  --destructive: #ff4d5e;
+  --border: #1c2a2d;
+  --input: #1c2a2d;
+  --ring: #5ff2d0;
+  --radius: 0.5rem;
+
+  --ctos-bg: #050708;
+  --ctos-surface: #0a0f10;
+  --ctos-elevated: #101719;
+  --ctos-border: #1c2a2d;
+  --ctos-border-hi: #2c4448;
+  --ctos-fg: #e8f0f2;
+  --ctos-fg-muted: #8fa3a8;
+  --ctos-fg-dim: #566a6f;
+  --ctos-cyan: #5ff2d0;
+  --ctos-blue: #5aa9ff;
+  --ctos-amber: #ffb020;
+  --ctos-red: #ff4d5e;
+  --ctos-grid: rgba(95, 242, 208, 0.07);
+}
+
+/* Tailwind v4 mapping */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+
+  --color-ctos-bg: var(--ctos-bg);
+  --color-ctos-surface: var(--ctos-surface);
+  --color-ctos-elevated: var(--ctos-elevated);
+  --color-ctos-border: var(--ctos-border);
+  --color-ctos-border-hi: var(--ctos-border-hi);
+  --color-ctos-fg: var(--ctos-fg);
+  --color-ctos-fg-muted: var(--ctos-fg-muted);
+  --color-ctos-fg-dim: var(--ctos-fg-dim);
+  --color-ctos-cyan: var(--ctos-cyan);
+  --color-ctos-blue: var(--ctos-blue);
+  --color-ctos-amber: var(--ctos-amber);
+  --color-ctos-red: var(--ctos-red);
+}
