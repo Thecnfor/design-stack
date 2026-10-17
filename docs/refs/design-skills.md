@@ -97,19 +97,24 @@ design-stack/
 ├─ skills/
 │  ├─ ctos-ui/                # 本项目视觉语言（token、HUD、glitch、storm）
 │  │  ├─ SKILL.md
-│  │  └─ references/
+│  │  └─ references/tokens.css
 │  ├─ ascii-storm/            # ASCII 风暴编排规范与代码骨架
 │  │  ├─ SKILL.md
-│  │  └─ references/
+│  │  └─ references/storm-skeleton.tsx
 │  ├─ shadcn-conventions/     # shadcn 使用与 registry 校验约定
 │  │  └─ SKILL.md
-│  └─ find-design/            # 设计参考检索工作流
-│     └─ SKILL.md
+│  ├─ find-design/            # 设计参考检索工作流
+│  │  └─ SKILL.md
+│  └─ design-md/              # DESIGN.md 写作规范与模板
+│     ├─ SKILL.md
+│     └─ references/template.md
 ├─ agents/
 │  └─ design-reviewer.md
 └─ docs/
    └─ refs/                   # 与本仓库 docs/refs 同步
 ```
+
+仓库地址：<https://github.com/Thecnfor/design-stack>
 
 ### 安装方式
 
