@@ -90,6 +90,29 @@ These are small, project-specific compositions. Keep them thin:
 
 Use shadcn/ui for the structural layer (Button, Badge, Card, Separator, Input, Tabs) and restyle via tokens.
 
+## Landing hero (ctOS boot screen)
+
+Do not build a conventional "left text / right card" hero. Build a monitored viewport:
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│ left rail │      ASCII wordmark + tagline + log      │ radar │
+│ vertical  │      (center-aligned, character grid)    │ panel │
+├───────────┴──────────────────────────────────────────────┴───────┤
+│ POSTS │ NOTES │ PROJECTS │ UPTIME                              │
+└──────────────────────────────────────────────────────────────────┘
+```
+
+- Three columns: 64px rail, flexible center, 300px instrument panel.
+- Thin HUD frame with four corner brackets and a 9s vertical scan sweep.
+- Center: ASCII wordmark with a 900ms reveal, pointer-proximity scramble (76px radius), and click burst; tagline; CTAs; a compact `system.log`.
+- Right: radar (6s sweep), identity panel, `storm // full` readout.
+- Bottom: four telemetry cells with tiny bar charts.
+- Add a radial vignette behind the wordmark and text so the storm never harms readability.
+- Hide the global bottom HUD on the home route; the hero has its own telemetry strip.
+
+Reference implementations: `references/ascii-wordmark.tsx`, `references/system-log.tsx`, `references/radar.tsx`.
+
 ## Review checklist
 
 - [ ] Only semantic colors are used; no purple neon or multicolor glow.
